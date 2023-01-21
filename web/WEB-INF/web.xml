@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AchatServlet</servlet-name>
+        <servlet-class>servlet.AchatServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MoyenneServlet</servlet-name>
+        <servlet-class>servlet.MoyenneServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FabricationServlet</servlet-name>
+        <servlet-class>servlet.FabricationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VenteServlet</servlet-name>
+        <servlet-class>servlet.VenteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AchatServlet</servlet-name>
+        <url-pattern>/AchatServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MoyenneServlet</servlet-name>
+        <url-pattern>/MoyenneServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FabricationServlet</servlet-name>
+        <url-pattern>/FabricationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VenteServlet</servlet-name>
+        <url-pattern>/VenteServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
